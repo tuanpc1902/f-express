@@ -1,4 +1,4 @@
-package com.tuanpc.nicetravel;
+package com.tuanpc.fexpress;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(NiceTravelApplication.class);
+        return application.sources(FExpressApplication.class);
     }
 
 }

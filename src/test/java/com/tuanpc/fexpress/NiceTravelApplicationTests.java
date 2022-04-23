@@ -1,10 +1,10 @@
-package com.tuanpc.nicetravel;
+package com.tuanpc.fexpress;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NiceTravelApplicationTests {
+class fexpressApplicationTests {
 
     @Test
     void contextLoads() {
