@@ -23,7 +23,7 @@ public class UserMapper implements RowMapper<User> {
         user.setDistrict(rs.getString("district"));
         user.setPhone(rs.getString("phone"));
         user.setPhoto(rs.getString("photo"));
-        user.setIdCard(rs.getString("id_Card"));
+        user.setIdCard(rs.getString("id_card"));
         user.setLastLogin(rs.getString("lastLogin"));
         user.setCreatedBy(rs.getInt("createdBy"));
         user.setCreatedDate(rs.getTimestamp("createdDate"));
@@ -35,6 +35,6 @@ public class UserMapper implements RowMapper<User> {
         user.setStatus(rs.getInt("status"));
         user.setProvider(rs.getString("provider"));
         user.setPasswordChangeTime(rs.getString("password_changed_time"));
-        return null;
+        return user;
     }
 }
