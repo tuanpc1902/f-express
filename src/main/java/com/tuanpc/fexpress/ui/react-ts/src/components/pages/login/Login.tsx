@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap'
 import './skin/Login.scss'
 import logo from '../../../assets/images/login/logo.png'
 const Login = () => {
-
+    document.title = 'Login - Flash Express'
     return (
         <div className='login__page'>
             <div className="login">
@@ -12,7 +12,9 @@ const Login = () => {
                 </div>
                 <div className="login__body">
                     <div className="login__logo">
+                        <a href='/' className='login__img-link'>
                         <img src={logo} alt="" className="login__img" />
+                        </a>
                     </div>
                     <div className="login__language">
                         <div className="mb-3">

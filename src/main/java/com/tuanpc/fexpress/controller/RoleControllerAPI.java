@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
-import java.util.List;
 
 @CrossOrigin("*")
 @RestController
@@ -24,13 +23,13 @@ public class RoleControllerAPI {
         return response;
     };
 
-    @RequestMapping(value = "/id/{role_id}", method = RequestMethod.GET)
-    public Role getRoleById(@PathVariable() int role_id){
-        return roleService.getRoleById(role_id);
+    @RequestMapping(value = "/id/{roleId}", method = RequestMethod.GET)
+    public Role getRoleById(@PathVariable("roleId") int roleId){
+        return roleService.getRoleById(roleId);
     };
 
-    @RequestMapping(value = "/name/{role_name}", method = RequestMethod.GET)
-    public Role getRoleByName(@PathVariable String role_name){
-        return roleService.getRoleByRoleName(role_name);
+    @RequestMapping(value = "/name/{roleName}", method = RequestMethod.GET)
+    public Role getRoleByName(@PathVariable("roleName") String roleName){
+        return roleService.getRoleByRoleName(roleName);
     };
 }
