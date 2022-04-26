@@ -1,6 +1,6 @@
 package com.tuanpc.fexpress.controller;
 
-import com.tuanpc.fexpress.contant.UrlApi;
+import com.tuanpc.fexpress.contant.UrlApiCommon;
 import com.tuanpc.fexpress.model.User;
 import com.tuanpc.fexpress.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping(UrlApi.URL_COMMON_API + "/user")
+@RequestMapping(UrlApiCommon.URL_COMMON_API + "/user")
 public class UserControllerAPI {
 
     private static final String STATUS = "status";
