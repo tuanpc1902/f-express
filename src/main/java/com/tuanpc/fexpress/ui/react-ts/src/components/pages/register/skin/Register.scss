@@ -1,6 +1,3 @@
-body {
-    background-image: url('../../../../assets//images/login/bg-3.jpg');
-}
 
 .register__page {
     height: 100vh;
@@ -54,7 +51,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px 0px 20px 0px;
+            padding: 10px 0 20px 0;
             flex: 1 1 100%;
 
             .register__img {
@@ -87,12 +84,14 @@ body {
     }
 
     .register__footer {
-        padding: 10px 60px;
-        padding-bottom: 40px;
+        padding: 10px 60px 40px;
 
         .btn {
             width: 100%;
             font-weight: 600;
+            background-color: #e86701;
+            outline: none;
+            border: none;
         }
     }
 }
