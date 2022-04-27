@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 
 @CrossOrigin("*")
 @RestController
@@ -18,10 +19,8 @@ public class UserControllerAPI {
     private UserService userService;
 
     @RequestMapping(value = "/all-user", method = RequestMethod.GET)
-    public HashMap<String, Object> getAllUser(){
-        HashMap<String, Object> jsonResponse = new HashMap<>();
-        jsonResponse.put("allUser", userService.getAllUser());
-        return jsonResponse;
+    public List<User> getAllUser(){
+        return userService.getAllUser();
     }
 
     @RequestMapping(value = "/id/{userId}", method = RequestMethod.GET)

@@ -4,8 +4,8 @@ class UserService {
     getAll() {
         return http.get("/user/all-user");
     }
-    get(id) {
-        return http.get(`/id/${id}`);
+    get(username) {
+        return http.get(`/user/username/${username}`);
     }
     create(data) {
         return http.post("/tutorials", data);
