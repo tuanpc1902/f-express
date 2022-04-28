@@ -1,6 +1,9 @@
 import http from "../axios";
 class UserService {
 
+    login(){
+        return 'http://localhost:8080/login'.get("/authenticate");
+    }
     getAll() {
         return http.get("/user/all-user");
     }

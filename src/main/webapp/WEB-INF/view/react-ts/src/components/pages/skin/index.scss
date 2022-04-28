@@ -1,0 +1,122 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+
+  .header-top {
+    width: 100%;
+    height: 30px;
+    background-color: #ffce5c;
+
+    .header-top-line {
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+
+      .header-top-left {
+        display: flex;
+        align-items: center;
+
+        div {
+          margin-right: 20px;
+        }
+
+        .header-top-left-phone {
+          font-weight: 600;
+        }
+      }
+
+      .header-top-right {
+        display: flex;
+        align-items: center;
+
+        div {
+          margin-right: 20px;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+
+
+        .header-top-right-language {
+          padding: 2px 0px;
+
+          .form-select {
+            font-size: 12px;
+            padding: 3px 2.25rem 3px 0.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  .header-body {
+    width: 60%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-logo {
+      display: flex;
+      justify-content: left;
+    }
+
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+
+      .header-nav-item {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        :active {
+          border-bottom: 2px solid black;
+        }
+
+        .header-nav-link {
+          font-size: 14px;
+          text-decoration: none;
+          color: #000;
+          font-weight: 400;
+        }
+      }
+
+      div {
+        margin-right: 50px;
+      }
+    }
+
+    .header-body-box-right {
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        font-size: 14px;
+      }
+
+      .btn-submit {
+        background-color: #f26522;
+        color: #fff;
+        font-weight: 500;
+      }
+
+      div {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+
+      .header-search {
+        font-size: 12px;
+      }
+    }
+  }
+}

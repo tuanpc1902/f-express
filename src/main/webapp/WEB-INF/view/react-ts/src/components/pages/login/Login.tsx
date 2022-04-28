@@ -1,9 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Form } from 'react-bootstrap'
 import './skin/Login.scss'
 import logo from '../../../assets/images/login/logo.png'
+import userService from "../../../services/user/UserService";
 const Login = () => {
     document.title = 'Login - Flash Express'
+
+    const userInfo = {
+        username: '',
+        password: '',
+        isLoginIn: false,
+        isError: false
+    }
+
+    const [state, setState] = useState(userInfo);
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+    //
+    //     const { username, password } = state
+    //
+    //
+    //     userService.login()
+    //         .then((response: { data: { username: any; }; }) => {
+    //             const user = response.data.username
+    //
+    //         })
+    //         .catch((error: any) => {
+    //             console.log(error)
+    //         })
+    // }
+
+    // @ts-ignore
+    // @ts-ignore
     return (
         <div className='login__page'>
             <div className="login">
@@ -25,18 +54,20 @@ const Login = () => {
                             </select>
                         </div>
                     </div>
-                    <div className="login__username">
-                        <div className="mb-3">
-                            <label className='label'>Username</label>
-                            <input type="text"  className="form-control" placeholder='Enter your username' />
+                    <form>
+                        <div className="login__username">
+                            <div className="mb-3">
+                                <label className='label'>Username</label>
+                                <input type="text" name="username" className="form-control" placeholder='Enter your username' />
+                            </div>
                         </div>
-                    </div>
-                    <div className="login__password">
-                    <div className="mb-3">
-                            <label className='label'>Password</label>
-                            <input type="password"  className="form-control" placeholder='Enter your password' />
+                        <div className="login__password">
+                            <div className="mb-3">
+                                <label className='label'>Password</label>
+                                <input type="password" name="password" className="form-control" placeholder='Enter your password' />
+                            </div>
                         </div>
-                    </div>
+                    </form>
                     <div className="login_captcha">
 
                     </div>
